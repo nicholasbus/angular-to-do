@@ -1,0 +1,11 @@
+.card {
+  width: 70%;
+
+  margin: 5% auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
