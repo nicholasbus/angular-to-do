@@ -7,9 +7,8 @@
     </mat-card-header>
     <mat-card-content>
         <!-- ITEMS GO HERE -->
-        <app-todo></app-todo>
-        <app-todo></app-todo>
-        <app-todo></app-todo>
+        <app-todo *ngFor="let todo of todos" [todo]="todo"></app-todo>
+        
     </mat-card-content>
     
   </mat-card>

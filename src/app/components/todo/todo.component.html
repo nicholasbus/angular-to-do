@@ -1,10 +1,11 @@
-<mat-card class="card">
+<mat-card class="card" [ngClass]="{important: todo.important}">
     <mat-card-header>
-        <mat-card-title>To-Do</mat-card-title>
-        <mat-card-subtitle>Date and time</mat-card-subtitle>
+        <mat-card-title>{{ todo.title }}</mat-card-title>
+        <mat-card-subtitle>{{ todo.date }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-actions>
-        <button mat-stroked-button color="accent">Important</button>
+        <button mat-stroked-button color="warn" *ngIf="!todo.important">Mark Important</button>
+        <button mat-stroked-button color="warn" *ngIf="todo.important">Mark Not Important</button>
         <button mat-stroked-button color="primary">Done</button>
     </mat-card-actions>
 </mat-card>

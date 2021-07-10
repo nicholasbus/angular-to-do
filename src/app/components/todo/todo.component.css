@@ -2,3 +2,7 @@
   margin: 5% auto;
   width: 70%;
 }
+
+.important {
+  border-left: 4px solid red;
+}
