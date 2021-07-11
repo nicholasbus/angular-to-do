@@ -4,8 +4,8 @@
         <mat-card-subtitle>{{ todo.date }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-actions>
-        <button mat-stroked-button color="warn" *ngIf="!todo.important">Mark Important</button>
-        <button mat-stroked-button color="warn" *ngIf="todo.important">Mark Not Important</button>
+        <button mat-stroked-button color="warn" *ngIf="!todo.important" (click)="handleImportantClick(todo)">Mark Important</button>
+        <button mat-stroked-button color="warn" *ngIf="todo.important" (click)="handleImportantClick(todo)">Mark Not Important</button>
         <button mat-stroked-button color="primary">Done</button>
     </mat-card-actions>
 </mat-card>

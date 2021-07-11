@@ -14,10 +14,13 @@ export class TodoComponent implements OnInit {
     important: false
   }
 
-
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleImportantClick(todo: Todo) {
+    todo.important = !todo.important;
   }
 
 }
