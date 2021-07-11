@@ -8,7 +8,7 @@ import { Todo } from '../../Todo';
 })
 export class ListContainerComponent implements OnInit {
   todos: Todo[] = [];
-
+  showAdd: boolean = false;
 
   constructor() { }
 
@@ -33,6 +33,10 @@ export class ListContainerComponent implements OnInit {
         important: true
       }
     ]
+  }
+
+  handleAddClick() {
+    this.showAdd = !this.showAdd;
   }
 
 }

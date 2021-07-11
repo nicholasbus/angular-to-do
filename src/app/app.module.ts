@@ -12,6 +12,7 @@ import { ListContainerComponent } from './components/list-container/list-contain
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { TodoComponent } from './components/todo/todo.component';
+import { AddFormComponent } from './components/add-form/add-form.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TodoComponent } from './components/todo/todo.component';
     AppComponent,
     ToolbarComponent,
     ListContainerComponent,
-    TodoComponent
+    TodoComponent,
+    AddFormComponent
   ],
   imports: [
     BrowserModule,

@@ -2,9 +2,10 @@
     <mat-card-header class="header">
         <mat-card-title>To Do Items</mat-card-title>
         <mat-card-actions>
-            <button mat-stroked-button color="primary">Add</button>
+            <button mat-stroked-button color="primary" (click)="handleAddClick()">{{ showAdd ? 'Cancel' : 'Add' }}</button>
         </mat-card-actions>
     </mat-card-header>
+    <app-add-form *ngIf="showAdd"></app-add-form>
     <mat-card-content>
         <!-- ITEMS GO HERE -->
         <app-todo *ngFor="let todo of todos" [todo]="todo"></app-todo>
