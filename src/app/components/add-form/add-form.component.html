@@ -1,1 +1,14 @@
-<p>add-form works!</p>
+<form>
+    <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput type="text" name="title" [(ngModel)]="title" id="title" placeholder="Title">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Date</mat-label>
+        <input matInput type="text" name="date" [(ngModel)]="title" id="date" placeholder="Date">
+    </mat-form-field>
+    <mat-checkbox name="important" [(ngModel)]="important" id="important">Important</mat-checkbox>
+    <button mat-raised-button color="primary">Add</button>
+</form>
+
+  

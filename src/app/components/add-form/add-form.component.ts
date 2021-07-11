@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-form.component.css']
 })
 export class AddFormComponent implements OnInit {
+  title: string = '';
+  date: string = '';
+  important: boolean = false;
+
 
   constructor() { }
 
